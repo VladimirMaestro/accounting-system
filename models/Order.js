@@ -27,25 +27,22 @@ const orderSchema = new Schema({
         type: Number,
         required: true
     },
-  //  list: [orderListSchema],
-
-list:[
-    {
-        name: {
-            type: String
-           // required: true,
-        },
-        quantity: {
-            type: Number
-           // reguared: true
-        },
-        cost: {
-            type: Number
-          ///  required: true
+    list:[
+        {
+            name: {
+                type: String
+            // required: true,
+            },
+            quantity: {
+                type: Number
+            // reguared: true
+            },
+            cost: {
+                type: Number
+            ///  required: true
+            }
         }
-    }
-],
-
+    ],
     user: {
         ref: 'users',
         type: Schema.Types.ObjectId
